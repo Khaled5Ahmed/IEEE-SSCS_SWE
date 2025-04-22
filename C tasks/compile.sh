@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -E task_9.c -o task_9.i && gcc -E my_putchar.c -o my_putchar.i && gcc -S task_9.i -o task_9.s && gcc -S my_putchar.i -o my_putchar.s && gcc -c task_9.s -o task_9.o && gcc -c my_putchar.s -o my_putchar.o && gcc task_9.o my_putchar.o -o task_9
